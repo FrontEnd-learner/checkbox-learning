@@ -3,13 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Checkbox</title>
     <!-- Fonts -->
     <!-- Style -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="main-content">
+        <div class="container">
+            <!-- 1-video Vadim Makeev -->
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="check option">
+                    <input class="check-input" type="checkbox">
+                    <span class="check-box"></span>
+                    First
+                </label>
+                <label class="check option">
+                    <input class="check-input" type="checkbox" checked>
+                    <span class="check-box"></span>
+                    Second
+                </label>
+                <label class="check option">
+                    <input class="check-input" type="checkbox" disabled>
+                    <span class="check-box"></span>
+                    Third
+                </label>
+                <label class="check option">
+                    <input class="check-input" type="checkbox" disabled checked>
+                    <span class="check-box"></span>
+                    Fourth
+                </label>
+            </form>
+
+            <!-- Yulduzli reyting -->
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="rating">
+                    <legend class="rating-caption">Bahoyingiz:</legend>
+                    <div class="rating-group">
+                        <input class="rating-star" type="radio" name="health" value="1" aria-label="Qonoqarsiz" checked>
+                        <input class="rating-star" type="radio" name="health" value="2" aria-label="Qoniqarli">
+                        <input class="rating-star" type="radio" name="health" value="3" aria-label="O'rtacha">
+                        <input class="rating-star" type="radio" name="health" value="4" aria-label="Yaxshi">
+                        <input class="rating-star" type="radio" name="health" value="5" aria-label="A'lo">
+                    </div>
+                </fieldset>
+                <fieldset class="rating">
+                    <legend class="rating-caption">Kayfiyatingiz:</legend>
+                    <div class="rating-group">
+                        <input class="rating-star" type="radio" name="mood" value="1" aria-label="Qonoqarsiz" >
+                        <input class="rating-star" type="radio" name="mood" value="2" aria-label="Qoniqarli">
+                        <input class="rating-star" type="radio" name="mood" value="3" aria-label="O'rtacha" checked>
+                        <input class="rating-star" type="radio" name="mood" value="4" aria-label="Yaxshi">
+                        <input class="rating-star" type="radio" name="mood" value="5" aria-label="A'lo">
+                    </div>
+                </fieldset>
+                <fieldset class="rating">
+                    <legend class="rating-caption">Umumiy:</legend>
+                    <div class="rating-group">
+                        <input class="rating-star" type="radio" name="general" value="1" aria-label="Qonoqarsiz" >
+                        <input class="rating-star" type="radio" name="general" value="2" aria-label="Qoniqarli">
+                        <input class="rating-star" type="radio" name="general" value="3" aria-label="O'rtacha">
+                        <input class="rating-star" type="radio" name="general" value="4" aria-label="Yaxshi">
+                        <input class="rating-star" type="radio" name="general" value="5" aria-label="A'lo" checked>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>

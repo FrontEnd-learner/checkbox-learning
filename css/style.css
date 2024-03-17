@@ -38,3 +38,99 @@ img{
 .main-content{
     flex-grow: 1;
 }
+
+/* Option */
+.option{
+    display: block;
+    margin-bottom: 5px;
+}
+.check{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.check-input{
+    position: absolute;
+    /* yangi code ptichkani yo'q qilish uchun */
+    appearance: none;
+}
+.check-box{
+    position: absolute;
+    margin-left: -20px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #222;
+    background-color: tomato;
+}
+
+/* Checked */
+.check-input:checked ~ .check-box{
+    background-color: aquamarine;
+}
+
+/* Focused */
+.check-input:focus ~ .check-box{
+    border: 2px solid orange;
+}
+.check-input:checked:focus ~ .check-box{
+    background-color: aquamarine;
+}
+
+/* Disabled */
+.check-input:disabled ~ .check-box{
+    border: 2px solid orange;
+}
+.check-input:checked:disabled ~ .check-box{
+    background-color: aquamarine;
+}
+
+/* RATING */
+.rating{
+    margin-bottom: 10px;
+    border: none;
+}
+.rating-caption{
+    margin-bottom: 3px;
+}
+
+.rating-group{
+    position: relative;
+    width: 10em;
+    height: 2em;
+    /* border: 1px solid black; */
+}
+
+/* Star */
+.rating-star{
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(233, 148, 21);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.rating-star:nth-of-type(1){
+    z-index: 5;
+    width: 2em;
+}
+.rating-star:nth-of-type(2){
+    z-index: 4;
+    width: 4em;
+}
+.rating-star:nth-of-type(3){
+    z-index: 3;
+    width: 6em;
+}
+.rating-star:nth-of-type(4){
+    z-index: 2;
+    width: 8em;
+}
+.rating-star:nth-of-type(5){
+    z-index: 1;
+    width: 10em;
+}
